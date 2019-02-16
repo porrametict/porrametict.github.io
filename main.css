@@ -1,0 +1,125 @@
+body {
+    background-color: #212121;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+.container {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+}
+.container > h1 {
+    line-height: 0;
+    opacity: 1;
+    font-size: 4em;
+    animation: displayHello ease-in-out ;
+    animation-duration: 2s;
+    position: relative;
+}
+
+#top_container {
+    display: none
+}
+.top_container {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #01af6a;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    color: white;
+    animation: pushSide 1s ease-in-out;
+}
+.top_container > section > img {
+    width: 70%;
+    height: auto;
+    min-width: 200px;
+    border-radius: 50%;
+    /* box-shadow: 5px 5px 5px #cccccc; */
+    border: white solid 10px;
+}
+.top_container > section >h1 {
+    margin: 0;
+    line-height: 1.5em;
+    font-size: 2.5em;
+}
+.top_container >section {
+    margin: 15px;
+}
+
+#up {
+    color: #a90be2;
+    animation: cchange  3s;
+}
+
+@keyframes cchange  {
+    0% {
+        color: white;
+    }
+    49%{
+        color: white;
+    }
+    50% {
+        color: #a90be2;
+    }
+    100% {
+        color: #a90be2;
+    }
+}
+@keyframes pushSide  {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+
+@keyframes displayHello {
+    from {
+        opacity: 0;
+        top:50px
+    }
+    to {
+        opacity: 1;
+        top: 0
+    }
+}
+.container #hello {
+    color: orange
+}
+#name {
+    display: none;
+}
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */  
+    animation:
+        typing 3.5s steps(30, end)  ,
+        blinking-cursor .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
