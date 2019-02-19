@@ -1,13 +1,23 @@
-
-function kitkat () {
-    document.getElementById("name").style.display = "block"
-    setTimeout(showTop,5500)
+function aniemtionEvent(selector) {
+    var elm = document.querySelector(selector);
+    elm.addEventListener('animationstart', function (e) {});
+    elm.addEventListener('onanimate', function (e) {});
+    elm.addEventListener('animationend', function (e) {});
 }
 
-function showTop () {
-    document.getElementById("top_container").style.display = "flex"
+function animetionContinue (animetion1,animetion2,display = "block") {
+    var elm = document.querySelector(animetion1);
+    elm.addEventListener('animationend', function (e) {
+        console.log("aniemtion End")
+    document.querySelector(animetion2).style.display = display
+    });
 }
-setTimeout (kitkat, 2100);
 
 
+
+window.onload = function() {
+this.animetionContinue("#hello","#name")
+this.animetionContinue("#name","#top_container","flex")
+
+} 
 

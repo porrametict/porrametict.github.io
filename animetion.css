@@ -1,0 +1,60 @@
+@keyframes changecolor {
+    0% {
+        color: white;
+    }
+    49% {
+        color: white;
+    }
+    50% {
+        color: #a90be2;
+    }
+    100% {
+        color: #a90be2;
+    }
+}
+
+@keyframes pushSideLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes pushUpTopCrossfade {
+    from {
+        opacity: 0;
+        top: 70px
+    }
+    to {
+        opacity: 1;
+        top: 0
+    }
+}
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blinking-cursor {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

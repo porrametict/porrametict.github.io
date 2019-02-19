@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="center">
+        <svg class="center circle-animation" xmlns="https://www.w3.org/TR/SVG/">
+            <g>
+                <circle cx="65" cy="70" r=60 fill="#96CCFF" stroke-width="3" stroke="#8181F7"></circle>
+                <text x="35" y="75" font-size="18" class="output">circle</text>
+            </g>
+        </svg>
+    </div>
+</body>
+
+</html>
+
+<style>
+    svg {
+        width: 150px;
+    }
+
+    text {
+        color: #000;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .center {
+        margin-top: 30px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .circle-animation {
+        animation-delay: 2s;
+        animation-duration: 4s;
+        animation-name: circle-animation;
+        animation-direction: normal;
+        animation-timing-function: linear;
+    }
+
+    @-webkit-keyframes circle-animation {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(2.25);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+</style>
+
+<script>
+    window.onload = function () {
+
+
+        // var elm = document.querySelector('.circle-animation');
+        // var op = document.querySelector('.output');
+        // var eventOnAnimate = new Event('onanimate');
+        // var time = 0;
+
+        // elm.addEventListener('animationend', function (e) {
+        // console.log("aniemtion End")
+        // op.innerHTML = 'ended';
+        // clearInterval(elm.interval);
+        // time = 0;
+        // });
+
+
+
+        // elm.addEventListener('animationstart', function (e) {
+        // op.innerHTML = 'started';
+        // time = 0;
+        // elm.interval = setInterval(function(){
+        //   eventOnAnimate.data = {sampleData: ++time};
+        //   elm.dispatchEvent(eventOnAnimate);
+        // });
+        // });
+
+        // elm.addEventListener('onanimate', function (e) {
+        // op.innerHTML = e.data.sampleData + 'ms';
+        // });
+        this.aniemtionEvent('.circle-animation')
+    }
+    function aniemtionEvent(selector) {
+        var elm = document.querySelector(selector);
+        elm.addEventListener('animationstart', function (e) {});
+        elm.addEventListener('onanimate', function (e) {});
+        elm.addEventListener('animationend', function (e) {
+            console.log("aniemtion End")
+        });
+    }
+
+
+</script>
