@@ -1,6 +1,6 @@
 window.onload = function () {
     let vid = document.getElementById("myVideo");
-    // vid.currentTime = 109.00
+    //  vid.currentTime = 70.00
     setInterval(my, 1)
 
 };
@@ -11,7 +11,7 @@ function my() {
     let cur_time = vid.currentTime.toFixed(2)
     console.log(cur_time)
     if (cur_time == 78.00) {
-        showTime()
+        document.getElementById("bird").style.display = "block"
     }
     if (cur_time == 78.95) {
         vid.pause();
@@ -56,6 +56,21 @@ function my() {
     if (cur_time == 110.00) {
         document.getElementById("frontBack").style.display = "block"
     }
+
+    if(cur_time == 110.65){
+        document.getElementById('front').style.display = "none"
+        document.getElementById('back').style.display = "block"
+    }
+    if(cur_time == 112.77){
+        document.getElementById('front').style.display = "block"
+        document.getElementById('back').style.display = "none"
+    }
+    if(cur_time == 113.29){
+        document.getElementById('front').style.display = "none"
+        document.getElementById('back').style.display = "block"
+    }
+
+
     if (cur_time == 113.56) {
         document.getElementById("frontBack").style.animation = " seExit .58s ease-out forwards"
 
@@ -82,16 +97,14 @@ function pause_sx1() {
     document.getElementById("myVideo").classList.remove("video_gray")
     document.getElementById('illum').pause()
     document.getElementById('s_punch').play()
+    document.getElementById("bird").style.opacity = "0"
+    document.getElementById("cssText").style.display = "block"
     // document.getElementById('myVideo').currentTime = 78.96;
     document.getElementById('myVideo').play()
     // document.getElementById('s_punch').pause()
 
 }
 
-function showTime() {
-    document.getElementById("cssText").style.display = "block"
-
-}
 
 function nicknameShow() {
     document.getElementById("nikeName").style.display = "flex";

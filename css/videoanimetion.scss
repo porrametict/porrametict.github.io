@@ -38,6 +38,14 @@ video {
   z-index: 1;
   position: absolute;
 
+  #bird{
+    display: none;
+    position: absolute;
+    top: 39%;
+    left: 15%;
+
+  }
+
   #cssText {
     display: none;
     position: absolute;
@@ -110,7 +118,7 @@ video {
   }
 
   #webDev {
-    position:  absolute;
+    position: absolute;
     top: 65%;
     left: 55%;
     border-right: 5px white solid;
@@ -118,15 +126,13 @@ video {
     justify-content: center;
     align-items: center;
     background-color: #fc2a7e;
-    text-shadow: 2px 2px 1px  white; 
+    text-shadow: 2px 2px 1px white;
     font-size: 20px;
 
     color: #1c1b1b;
-    width : 300px ;
+    width: 300px;
     height: 70px;
-    animation : pushUp .5s ease-out,
-    shaking .1s alternate  1s infinite;
-    
+    animation: pushUp 0.5s ease-out, shaking 0.1s alternate 1s infinite;
   }
   #frontBack {
     display: none;
@@ -134,13 +140,12 @@ video {
     top: 65%;
     left: 55%;
     color: white;
-    text-shadow: 2px 2px 1px #ff6d05 ,
-                  3px 3px 3px black;
+    text-shadow: 2px 2px 1px #ff6d05, 3px 3px 3px black;
     font-size: 24px;
-    animation : crossfade .25s reverse ,
-    switchFB 1s normal  .5s forwards,
-    switchBF .5s alternate 2.5s infinite;
-    
+    animation: crossfade 0.25s reverse, switchFB 1s normal 0.5s forwards, switchBF 0.5s alternate 2.5s infinite;
+    #back {
+      display: none;
+    }
   }
 
   #end {
@@ -166,8 +171,7 @@ video {
       // box-shadow: 0 0 0 700px #2c2c2d;
       border: 3px solid;
       background-color: #44c4ff;
-      animation: btnShow 1s ease-in-out,
-      btnSpan 1s ease-in-out 1s forwards;
+      animation: btnShow 1s ease-in-out, btnSpan 1s ease-in-out 1s forwards;
 
       &:active {
         font-size: 30px;
@@ -175,4 +179,3 @@ video {
     }
   }
 }
-

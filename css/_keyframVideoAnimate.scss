@@ -129,12 +129,10 @@
 
 @keyframes switchFB {
     0% {
-        content: "Front-end";
         top: 65%;
         left: 55%;
     }
     25% {
-        content: "Back-end";
         top: 50%;
         left: 27%;
     }
@@ -148,12 +146,10 @@
 
 @keyframes switchBF {
     from {
-        content: "Back-end";
         top: 65%;
         left: 27%;
     }
     to {
-        content: "Front-end";
         top: 65%;
         left: 55%;
     }

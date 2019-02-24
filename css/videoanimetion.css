@@ -276,12 +276,10 @@
 
 @-webkit-keyframes switchFB {
   0% {
-    content: "Front-end";
     top: 65%;
     left: 55%;
   }
   25% {
-    content: "Back-end";
     top: 50%;
     left: 27%;
   }
@@ -293,12 +291,10 @@
 
 @keyframes switchFB {
   0% {
-    content: "Front-end";
     top: 65%;
     left: 55%;
   }
   25% {
-    content: "Back-end";
     top: 50%;
     left: 27%;
   }
@@ -310,12 +306,10 @@
 
 @-webkit-keyframes switchBF {
   from {
-    content: "Back-end";
     top: 65%;
     left: 27%;
   }
   to {
-    content: "Front-end";
     top: 65%;
     left: 55%;
   }
@@ -323,12 +317,10 @@
 
 @keyframes switchBF {
   from {
-    content: "Back-end";
     top: 65%;
     left: 27%;
   }
   to {
-    content: "Front-end";
     top: 65%;
     left: 55%;
   }
@@ -383,6 +375,13 @@ video {
   width: 100%;
   z-index: 1;
   position: absolute;
+}
+
+.overlay_video #bird {
+  display: none;
+  position: absolute;
+  top: 39%;
+  left: 15%;
 }
 
 .overlay_video #cssText {
@@ -491,13 +490,13 @@ video {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fc2a7e;
-  text-shadow: 2px 2px 1px  white;
+  text-shadow: 2px 2px 1px white;
   font-size: 20px;
   color: #1c1b1b;
   width: 300px;
   height: 70px;
-  -webkit-animation: pushUp .5s ease-out, shaking .1s alternate  1s infinite;
-          animation: pushUp .5s ease-out, shaking .1s alternate  1s infinite;
+  -webkit-animation: pushUp 0.5s ease-out, shaking 0.1s alternate 1s infinite;
+          animation: pushUp 0.5s ease-out, shaking 0.1s alternate 1s infinite;
 }
 
 .overlay_video #frontBack {
@@ -506,9 +505,14 @@ video {
   top: 65%;
   left: 55%;
   color: white;
-  text-shadow: 2px 2px 1px #ff6d05 , 3px 3px 3px black;
+  text-shadow: 2px 2px 1px #ff6d05, 3px 3px 3px black;
   font-size: 24px;
-  animation: crossfade .25s reverse , switchFB 1s normal  .5s forwards, switchBF .5s alternate 2.5s infinite;
+  -webkit-animation: crossfade 0.25s reverse, switchFB 1s normal 0.5s forwards, switchBF 0.5s alternate 2.5s infinite;
+          animation: crossfade 0.25s reverse, switchFB 1s normal 0.5s forwards, switchBF 0.5s alternate 2.5s infinite;
+}
+
+.overlay_video #frontBack #back {
+  display: none;
 }
 
 .overlay_video #end {
@@ -540,8 +544,8 @@ video {
   font-size: 24px;
   border: 3px solid;
   background-color: #44c4ff;
-  -webkit-animation: btnShow 1s ease-in-out, btnSpan 1s ease-in-out 1s forwards;
-          animation: btnShow 1s ease-in-out, btnSpan 1s ease-in-out 1s forwards;
+  -webkit-animation: btnShow 1s ease-in-out, btnSpan 1s ease-in-out 1s forwards;
+          animation: btnShow 1s ease-in-out, btnSpan 1s ease-in-out 1s forwards;
 }
 
 .overlay_video div:first-child button:active {
