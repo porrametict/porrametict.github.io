@@ -13,13 +13,16 @@
 <body>
   
     <section class="video_container">
-        <video id="myVideo" class="video " autoplay>
+        <video id="myVideo" class="video " >
             <source src="assert/video.mov" >
         </video>
         <audio src="assert/illuminati.mp3" id="illum"></audio>
         <audio src="assert/s_punch.mp3" id="s_punch"></audio>
 
         <div class="overlay_video">
+                <div id="play" onclick="playVideo()">
+                    <img src="assert/play.png" alt="" width="150px">
+                </div>
                 <div id="bird">
                     <img src="assert/bird.gif" alt="" width="200px">
                 </div>

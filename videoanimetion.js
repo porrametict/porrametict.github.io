@@ -1,9 +1,20 @@
 window.onload = function () {
     let vid = document.getElementById("myVideo");
-    //  vid.currentTime = 70.00
+    // vid.currentTime = 70.00
+    // vid.play();
+    // vid.muted = false;
+    // setTimeout(function () {
+    //     document.getElementById("myVideo").play();
+    // },3000)
+
     setInterval(my, 1)
 
 };
+function playVideo () {
+    document.getElementById("play").style.display = "none"
+    document.getElementById("myVideo").play()
+
+}
 
 
 function my() {

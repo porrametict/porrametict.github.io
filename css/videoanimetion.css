@@ -377,6 +377,19 @@ video {
   position: absolute;
 }
 
+.overlay_video #play {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.overlay_video #play:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
 .overlay_video #bird {
   display: none;
   position: absolute;

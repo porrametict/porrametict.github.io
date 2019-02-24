@@ -38,6 +38,16 @@ video {
   z-index: 1;
   position: absolute;
 
+  #play {
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0)
+    }
+  }
+
   #bird{
     display: none;
     position: absolute;
