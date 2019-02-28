@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,UAAU,EAAE,EAAG;EACf,OAAO,EAAE,CAAC;CACb;;AACD,AAAA,IAAI,AAAA,aAAa,CAAC,gBAAgB,CAAC;EAC/B,OAAO,EAAE,CAAC;EACV,SAAS,EAAE,kBAAkB;CAChC",
+    "sources": [
+        "indexTransition.scss"
+    ],
+    "names": [],
+    "file": "indexTransition.css"
+}
