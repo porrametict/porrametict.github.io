@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/circleprogress.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
+  <title>About me</title>
+</head>
+
+<body>
+  <div id="backG">
+    <img src="assert/bg.svg">
+  </div>
+  <div class="float ">
+    <div class="contact">
+      <i class="fab fa-github-square"></i>
+      <i class="fab fa-facebook-square"></i>
+    </div>
+  </div>
+  <div class="container">
+    <div class="fulid">
+      <section class="content bgwhite">
+        <div id="base_information">
+          <img src="assert/proflie.jpg" class="proImg">
+          <div id="biography">
+            <h1>Mr. Porramet Taeng-orn (Peet)</h1>
+            <hr>
+            <h1>Studying Software Engineering </h1>
+            <h1>at UNIVERSITY OF PHAYAO </h1>
+            <hr>
+            <h1>Homwtown : Phichit , Thailand</h1>
+            <h1>Current city : Phayao , Thailand</h1>
+            <hr>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="fulid " >
+      <section class="content content-full bgwhite sm-height-full">
+        <div class="name">
+          <h1>skills</h1>
+        </div>
+        <div class="skill_content">
+          <div id="eng_lng" class="skill">
+            <h2>English Language</h2> 
+            <div class="progress">
+                <div class="progress_val"></div>
+              </div>
+          </div>
+          <div id="python" class="skill">
+            <h2>Python </h2> 
+            <div class="progress">
+                <div class="progress_val"></div>
+              </div>
+          </div>
+          <div id="html_css_js" class="skill">
+            <h2>HTML, CSS, Javascript</h2> 
+            <div class="progress">
+                <div class="progress_val"></div>
+              </div>
+          </div>
+          <div id="sql"  class="skill">
+            <h2>MySQL, SQL server</h2> 
+            <div class="progress">
+                <div class="progress_val"></div>
+              </div>
+          </div>
+          <div id="VueJs"  class="skill">
+            <h2>VueJs Framework</h2> 
+            <div class="progress">
+                <div class="progress_val"></div>
+              </div>
+          </div>
+          <div id="AdonisJs"  class="skill">
+            <h2>AdonisJs Framework</h2> 
+            <div class="progress">
+                <div class="progress_val"></div>
+              </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <div class="fulid">
+      <section class="content content-full bgwhite">
+        <div class="name">
+          <h1>experience</h1>
+        </div>
+        <div id="experience">
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div id="cattlemis">
+                  <img src="assert/cattlemis.jpg">
+                  <div class="detail">
+                    Is part of the development of CattleMIS
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+
+        </div>
+    </div>
+    </section>
+  </div>
+  </div>
+
+</body>
+
+</html>
+<script src="node_modules/swiper/dist/js/swiper.min.js"></script>
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>

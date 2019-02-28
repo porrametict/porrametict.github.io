@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round|Work+Sans");
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-shadow: 1px 1px 2px #474747;
+}
+
+.bgwhite {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bgyellow {
+  background-color: rgba(255, 251, 45, 0.2);
+}
+
+.content-full {
+  width: 90% !important;
+  min-height: 40% !important;
+}
+
+.float {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  color: white;
+  background-color: #fff;
+  padding: 2px 20px;
+  border-radius: 0 0 0 30px;
+}
+
+.float .contact {
+  font-size: 50px;
+}
+
+.float .contact .fa-github-square {
+  color: #2b2b2b;
+  cursor: pointer;
+}
+
+.float .contact .fa-facebook-square {
+  color: darkblue;
+  cursor: pointer;
+}
+
+.sm-height-full {
+  height: 90% !important;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+  overflow-y: scroll;
+  background-color: #033471;
+  font-family: "Work Sans", sans-serif;
+}
+
+body #backG {
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body #backG img {
+  position: fixed;
+  top: -10%;
+  min-width: 100%;
+}
+
+body .container {
+  position: absolute;
+  z-index: 1;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+body .container .fulid {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .fulid .content {
+  margin: 50px 0;
+  width: 80%;
+  padding: 24px;
+  border: 3px solid white;
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container .fulid .content .name {
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5vw;
+}
+
+body .container .fulid .content #base_information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .fulid .content #base_information .proImg {
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+  max-width: 350px;
+  border: 5px solid white;
+  margin: 16px;
+}
+
+body .container .fulid .content #base_information #biography {
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  line-height: 35px;
+}
+
+body .container .fulid .content #base_information #biography hr {
+  margin: 15px 0;
+  opacity: 0.5;
+}
+
+.skill_content {
+  width: 80%;
+  height: 80%;
+}
+
+.skill_content .skill {
+  margin: 7px 0;
+}
+
+.skill_content #eng_lng .progress_val {
+  background-color: #d80abd;
+  width: 30%;
+}
+
+.skill_content #python .progress_val {
+  background-color: #35a2fc;
+  width: 30%;
+}
+
+.skill_content #html_css_js .progress_val {
+  background-color: #ebc004;
+  width: 75%;
+}
+
+.skill_content #sql .progress_val {
+  background-color: #6e6e6e;
+  width: 67%;
+}
+
+.skill_content #VueJs .progress_val {
+  background-color: #04fa62;
+  width: 55%;
+}
+
+.skill_content #AdonisJs .progress_val {
+  background-color: #ac04fa;
+  width: 85%;
+}
+
+.skill_content h2 {
+  display: inline-block;
+  background-color: #fff;
+  position: relative;
+  left: 3px;
+  top: 2px;
+  border-radius: 10px 10px 0 0;
+  padding: 3px 10px 3px 10px;
+  text-shadow: none;
+  font-size: 3vw;
+}
+
+.skill_content .progress {
+  border: 3px white solid;
+  border-radius: 10px;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 3px #303030;
+          box-shadow: 1px 1px 3px #303030;
+}
+
+.skill_content .progress .progress_val {
+  margin: 0;
+  height: 2.5vh;
+  border-radius: 10px;
+}
+
+#experience {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#experience .swiper-container {
+  margin-top: 20px;
+  width: 90%;
+}
+
+#experience .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#experience #cattlemis {
+  width: 100%;
+  text-align: center;
+}
+
+#experience #cattlemis img {
+  width: 100%;
+  height: auto;
+}
+
+#experience #cattlemis .detail {
+  font-size: 2.5vw;
+  position: relative;
+  top: -30px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f7953a;
+  color: #fff;
+}
+
+@media screen and (min-width: 960px) {
+  body .content-full {
+    width: 90% !important;
+    min-height: 90% !important;
+  }
+  body .container .fulid .content {
+    width: 70%;
+    min-height: 70%;
+    padding: 0;
+  }
+  body .container .fulid .content #name {
+    margin-top: 10px;
+  }
+  body .container .fulid .content #base_information {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .container .fulid .content #base_information .proImg {
+    margin: 0 30px;
+  }
+  body .container .fulid .content #base_information #biography {
+    text-align: left;
+    font-size: 16px;
+    margin: 0 30px;
+  }
+  .skill_content .skill {
+    margin: 20px 0;
+  }
+  .skill_content h2 {
+    font-size: 24px;
+  }
+  .skill_content .progress .progress_val {
+    height: 3vh;
+  }
+  #experience #cattlemis .detail {
+    top: -50px;
+    height: 70px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

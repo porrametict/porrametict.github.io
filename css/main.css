@@ -1,0 +1,71 @@
+@import 'animetion.css';
+@import 'btn_slidingBorder.css';
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #212121;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+.container {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+}
+.container > h1 {
+    line-height: 0;
+    opacity: 1;
+    font-size: 4em;
+    animation: pushUpTopCrossfade 1s ease-out forwards;
+    position: absolute;
+}
+
+.container #hello {
+    color: rgb(219, 148, 16)
+}
+#name {
+    display: none;
+}
+.typewriter h1 {
+    background-color: #212121;
+    width: 0;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    
+    letter-spacing: .15em; /* Adjust as needed */  
+    animation:
+        typing 3.5s steps(30, end) .5s forwards,
+        blinking-cursor .5s step-end infinite;
+  }
+
+
+.container_btn {
+    overflow: hidden;
+    display: none;
+    text-align: center;
+    animation: btnpullDown .75s ease-in-out forwards;
+    z-index: -1;
+    position: absolute;
+    top : 50% ;
+}
+
+.trasition-fade {
+    transition: 1s;
+    opacity: 1;
+}
+html.is-animating .trasition-fade {
+    opacity: 0;
+    transform: translateY(-100px)
+
+}
+
+

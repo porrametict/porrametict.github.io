@@ -5,19 +5,18 @@ function aniemtionEvent(selector) {
     elm.addEventListener('animationend', function (e) {});
 }
 
-function animetionContinue (animetion1,animetion2,display = "block") {
-    var elm = document.querySelector(animetion1);
+function animationContinue (animation1,animation2,display = "block") {
+    var elm = document.querySelector(animation1);
     elm.addEventListener('animationend', function (e) {
         console.log("aniemtion End")
-    document.querySelector(animetion2).style.display = display
+    document.querySelector(animation2).style.display = display
     });
 }
 
 
 
 window.onload = function() {
-this.animetionContinue("#hello","#name")
-this.animetionContinue("#name","#top_container","flex")
-
+animationContinue("#hello","#name")
+animationContinue("#name",".container_btn")
 } 
 
